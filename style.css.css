@@ -1,0 +1,116 @@
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: rgb(73, 80, 87);
+  position: relative;
+}
+
+/* LAPTOP */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+#timeline {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+#scopes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.box {
+  background-color: aliceblue;
+  padding: 12px;
+}
+
+h3 {
+  color: blue;
+  border-bottom: 1px solid rgba(73, 80, 87, 0.5);
+  padding: 5px 0;
+}
+
+.info {
+  margin: 12px 24px;
+}
+
+.d-flex {
+  gap: 24px;
+}
+
+.goals-flex {
+  border-bottom: 1px solid rgba(73, 80, 87, 0.1);
+  margin-top: 8px;
+}
+
+.info-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.number {
+  background-color: blueviolet;
+  /* padding: 10px; */
+  border-radius: 50%;
+  color: white;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+button {
+  /* margin-bottom: 100px; */
+  position: absolute;
+  right: 32px;
+  bottom: -52px;
+  border: none;
+}
+
+.btn {
+  color: white;
+}
+
+/* tablep */
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  i {
+    text-align: center;
+  }
+
+  .number {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(73, 80, 87, 1);
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
